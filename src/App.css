@@ -1,38 +1,311 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Dancing+Script:wght@700&family=Open+Sans:ital,wght@0,300;1,800&family=Poppins:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Dancing+Script:wght@700&family=Open+Sans:ital,wght@0,300;1,800&family=Poppins:ital,wght@0,400;1,300&family=Roboto+Condensed:ital@1&family=Roboto+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Dancing+Script:wght@700&family=Gabarito&family=Mukta:wght@300&family=Open+Sans:ital,wght@0,300;1,800&family=Poppins:ital,wght@0,400;1,300&family=Roboto+Condensed:ital@1&family=Roboto+Mono:wght@200&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+.container{
+  padding:  20px 50px;
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://preview.colorlib.com/theme/djoz/img/hero-bg.png.webp');
+background-repeat: no-repeat;
+background-size: cover;}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container header{
+  width: 100%;
+  border: 2px solid white;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.container header ul{
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  list-style-type: none;
+}
+.container header h1{
+  color: rgba(255, 0, 0, 0.794);
+  cursor: pointer;
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+}
+.container header ul li{
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 19px;
+  border-radius: 10px;
+  font-weight: 10px;
+  transition: all 0.7s ease;
+}
+.container header ul li:hover{
+  background-color: blue;
+  color: black;
+}
+.container header button{
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  background-color:  blueviolet;
+  transition: all 0.2s ease;
+  padding: 8px 15px;
+  border: none;
+  color: black;
+  font-size: 30px;
+}
+.container header button:hover{
+  background-color: transparent;
+  color:  blueviolet;
+ 
+}
+.container .content{
+  width: 50%;
+  position: relative;
+  top: 130px;
+  left: 250px;
+  line-height: 2;
+}
+.container .content button{
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  background-color:  blueviolet;
+  transition: all 0.2s ease;
+  padding: 8px 15px;
+  border: none;
+  color: black;
+  font-size: 30px;
+  box-sizing: border-box;
+}
+.container .content button:hover{
+  background-color: transparent;
+  color:  blueviolet;
+
+}
+#h11{
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+  color:   #fff;
+}
+#h22{
+  font-family: 'Poppins', sans-serif;
+  font-size: 45px;
+  color: #fff;
+}
+.container2{
+  width: 100%;
+  height: 70vh;
+  padding: 20px 200px;
+}
+.container2 h1{
+  margin-bottom: 20px;
+}
+.container .content p{
+  color: #fff;
+  font-size: 25px;
+  font-family: 'Dancing Script', cursive;
+}
+.container2 .event{
+  width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container2 .event .card{
+    margin: 0;
+    padding: 0;
+    width: 27%;
+    height: 400px;
+    background-color:lightgray;
+}
+.container2 .event .card img{
+  width: 100%;
+  height: 280px;
+}
+.container2 .event .card button{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  border: none;
+  padding: 5px 5px;
+  position: relative;
+  left: 28%;
+  top:-23px;
+  background-color: blueviolet;
+}
+.container2 .event .card h2,.container2 .event .card h3{
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+ font-size: 20px;
+}
+.contact{
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  padding: 20px 200px;
+}
+.contact .con{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     line-height: 2;
+}
+.contact .con h1{
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+}
+.contact .con p{
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+}
+.contact .con button{
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  background-color:  blueviolet;
+  transition: all 0.2s ease;
+  padding: 8px 15px;
+  border: none;
+  color: black;
+  font-size: 30px;
+  box-sizing: border-box;
+}
+.contact .con button:hover{
+  background-color: transparent;
+  color:  blueviolet;
+}
+.wrapper .video{
+  display: flex;
+  width: 100%;
+  height: 80vh;
+}
+.wrapper .video .flex1{
+  width: 50%;
+  background-image: url('https://preview.colorlib.com/theme/djoz/img/services/service-left.jpg.webp');
+}
+.wrapper .video .flex1 a {
+  display: flex;
+  height: 100%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  z-index: 2;
+  background: transparent;
 }
-
-.App-link {
-  color: #61dafb;
+.wrapper .video .flex1 a img{
+  width: 20%;
 }
+.wrapper .video section{
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+.wrapper .video section .fcard1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 2;
+  width: 50%;
+  height: 40vh;
+  background-color: rgb(84, 0, 188);
+  padding: 10px 20px;
+}
+.wrapper .video section .fcard2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 2;
+  flex-direction: column;
+  width: 50%;
+  padding: 10px 20px;
+  height: 40vh;
+  background-color:rgb(92, 0, 206);
+}
+.wrapper .video section .fcard2 h1, .wrapper .video section .fcard1 h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  color: #fff;
+}
+.wrapper .video section .fcard2 p, .wrapper .video section .fcard1 p{
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 25px;
+  color:   #fff;
+}
+.wrapper .footer{
+  width: 100%;
+  height: 60vh;
+  background-image: url('https://preview.colorlib.com/theme/djoz/img/footer-bg.png.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 150px;
+}
+.wrapper .footer .foot{
+  padding: 0px 200px ;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+}
+.wrapper .footer .foot .footIn{
+    width: 33%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    border-right: 2px solid #fff;
+}
+.wrapper .footer .foot .footIn .con2{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+#foot1{
+  border-right:none ;
+}
+.wrapper .footer p{
+  margin: 0 200px;
+}
+.wrapper .footer .foot .footIn .con2 img{
+  padding: 5px;
+  width: 25%;
+  height: 45%;
+  background-color: white;
+  border-radius: 50%;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.wrapper .footer .foot .footIn h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.wrapper .footer .foot .footIn img{
+  width: 25%;
+  height: 50%;
+  background-color: white;
+  border-radius: 50%;
+
+}
+.wrapper .footer .foot .footIn input,.wrapper .footer .foot .footIn button{
+  border: 1px solid #fff;
+  padding: 12px 15px;
+  width: 60%;
+  margin:0 auto;
+  background-color: transparent;
+  margin-bottom: 20px;
+}
+.wrapper .footer p{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  color: gray;
 }
